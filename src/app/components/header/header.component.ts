@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  standard: boolean = true;
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+    if(window.screen.width < 540){
+      this.standard = false
+    }
   }
 
 }

@@ -1,7 +1,7 @@
 <header class="container headerContainer">
   <div>
     <img src="/assets/Logo.svg" alt="Website logo image">
-    <nav>
+    <nav *ngIf="standard, else headerMobile">
       <ul>
         <li class="active">Start</li>
         <li>Shows</li>
@@ -10,9 +10,15 @@
         <li>My List</li>
       </ul>
     </nav>
+
+    <ng-template #headerMobile>
+      <app-mobile-menu></app-mobile-menu>
+    </ng-template>
   </div>
+
   <div>
     <img src="/assets/search.svg" alt="Website logo image">
     <img src="/assets/bell.svg" alt="Website logo image">
   </div>
 </header>
+

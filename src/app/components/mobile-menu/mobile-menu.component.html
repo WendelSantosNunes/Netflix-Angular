@@ -1,0 +1,15 @@
+<div>
+  <img src="/assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" (click)="setMenuIsVisible()" alt="Menu image">
+  <div *ngIf="visible"  class="visible">
+    <img src="/assets/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" (click)="setMenuIsVisible()" class="close" alt="Close image">
+    <nav class="menu">
+      <ul>
+        <li class="active">Start</li>
+        <li>Shows</li>
+        <li>Movies</li>
+        <li>New</li>
+        <li>My List</li>
+      </ul>
+    </nav>
+  </div>
+</div>
