@@ -1,0 +1,38 @@
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+}
+
+.headerContainer div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin: 1rem 0;
+}
+
+.headerContainer div .active{
+  font-weight: bold;
+}
+
+.headerContainer nav ul{
+  display: flex;
+  gap: 1rem;
+}
+
+.headerContainer nav ul li{
+  list-style: none;
+
+  cursor: pointer;
+
+  font-size: 0.875rem;
+}
+
+
+.headerContainer nav ul li:not(.active):hover{
+  color: red;
+}
+
+
