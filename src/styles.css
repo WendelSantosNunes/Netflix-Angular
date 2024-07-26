@@ -20,3 +20,33 @@ button {
   width: min(90vw, 86rem);
   margin: 0 auto;
 }
+
+@media (min-width: 577px) {
+  .container {
+      width: 540px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+      width: 720px;
+  }
+}
+
+@media (min-width: 993px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+      width: 1140px;
+  }
+}
+
+@media (min-width: 1341px) {
+  .container {
+      width: 1200px;
+  }
+}
