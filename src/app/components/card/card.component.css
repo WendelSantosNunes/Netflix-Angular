@@ -1,0 +1,139 @@
+.list:not(:nth-child(1)){
+  margin-top: 2rem;
+}
+
+.title-section{
+  display: flex;
+  align-items: center;
+}
+
+.title-section h2 {
+  font-size: 1.25rem;
+}
+
+.carousel-container{
+  display: flex;
+  position: relative
+}
+
+.vector-left,
+.vector-right {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.vector-left {
+  left: -60px;
+}
+
+.vector-right {
+  right: -60px;
+}
+
+.carousel {
+  overflow: hidden;
+
+  display: flex;
+  gap: 0.7rem;
+
+  margin-top: 1.25rem;
+  transition: scroll 0.10s ease;
+  scroll-behavior: smooth;
+}
+
+.carousel .card-container {
+  max-width: 24.375rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.carousel .card-container:not([identified='2']) {
+  background-color: #141414;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3);
+}
+
+.carousel .card-container .movie-card .carousel-img img{
+  width: 24.375rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.carousel .card-container .info{
+  width: min(90vw, 21.375rem);
+  margin: 0 auto;
+  padding-bottom: 1rem;
+
+  border-radius: 0 0 1rem 1rem;
+}
+
+.carousel .info .action{
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1.5rem;
+}
+
+.carousel .info .action div{
+  display: flex;
+  gap: 0.8rem;
+}
+
+.carousel .info .action img{
+  cursor: pointer;
+}
+
+.carousel .info .action img:hover{
+  background-color: red;
+}
+
+.carousel .info img{
+  border: 1px solid white;
+  border-radius: 20px;
+
+  padding: 0.2rem;
+}
+
+.carousel .info .data{
+  margin-top: 1rem;
+}
+
+.carousel .card-container .data{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel .card-container .data strong{
+  color: green;
+}
+
+.carousel .card-container .genre{
+  margin-top: 0.5rem;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel .card-container .genre div{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel .card-container .elipse{
+  content: '';
+  background-color: #595959;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+.carousel .card-container .movie-card .carousel-img.two{
+  display: flex;
+}
+
+.carousel-img.two .number-image,
+.carousel-img.two .movie-image {
+  max-width: 11.5625rem;
+  height: 260px;
+  width: 100%;
+}

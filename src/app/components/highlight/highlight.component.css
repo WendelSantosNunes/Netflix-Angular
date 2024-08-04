@@ -46,6 +46,7 @@ main .title .execution{
 main .execution button{
   padding: 0.625rem 1rem;
 
+  border: none;
   border-radius: 0.25rem;
 
   color: white;
@@ -59,15 +60,29 @@ main .execution button:nth-child(1){
   background-color: white;
 }
 
-main .execution button:nth-child(2){
+main .execution button:nth-child(1):hover{
+  background-color: hsl(0, 0%, 75%);
+}
+
+main .execution button:nth-child(2) {
   display: flex;
   align-items: center;
 
-  background-color: #8c8d8f;
+  background-color: hsl(0, 0%, 50%);
 }
 
-main .execution button:hover {
-  background-color: red;
+main .execution button:nth-child(2):hover {
+  background-color: hsl(0, 0%, 25%);
+}
+
+main section .list:not(:nth-child(1)){
+  margin-top: 2rem;
+}
+
+footer {
+  margin: 2rem auto;
+  text-align: center;
+  color: #FFF;
 }
 
 @media (max-width: 1340px) {

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { HighlightComponent } from './components/highlight/highlight.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { HighlightComponent } from './components/highlight/highlight.component';
     HeaderComponent,
     MobileMenuComponent,
     HighlightComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

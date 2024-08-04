@@ -1,0 +1,68 @@
+<div>
+  <div class="title-section">
+    <h2>{{title}}</h2>
+    <img src="/assets/chevron-right.svg" alt="">
+  </div>
+
+  <div class="carousel-container">
+    <img
+      src="../../../assets/Vector left.svg"
+      (click)="prevBtn(identified)"
+      class="vector-left"
+      alt="Vector left image"
+    >
+
+    <div class="carousel list-{{identified}}">
+      <div *ngFor="let movie of movies; let i = index" class="card-container" [attr.identified]="identified">
+        <div class="movie-card">
+          <div *ngIf="identified !== '2'" class="carousel-img">
+            <img [src]="url + movie.backdrop_path" [alt]="movie.title">
+          </div>
+
+          <div *ngIf="identified === '2'" class="carousel-img two">
+            <img [src]="listNumber[i]" [alt]="i" class="number-image">
+            <img [src]="url + movie.poster_path" [alt]="movie.title" class="movie-image">
+          </div>
+
+          <div *ngIf="identified !== '2'" class="info">
+            <div class="action">
+              <div>
+                <img src="/assets/Play.svg" alt="Play icon image">
+                <img src="/assets/plus.svg" alt="Plus icon image">
+                <img src="/assets/thumbs-up.svg" alt="Thumbs up icon image">
+                <img src="/assets/thumbs-down.svg" alt="Thumbs down icon image">
+              </div>
+
+              <img src="/assets/chevron-down.svg" alt="Chevron down icon image">
+            </div>
+
+            <div class="data">
+              <strong>{{ ((movie.vote_average ?? 0) * 10) | number: '1.0-0' }}% Match</strong>
+
+              <div *ngIf="details[i]">
+                {{ hoursTransformation(details[i].runtime) || '' }}
+              </div>
+            </div>
+
+            <div *ngIf="details[i]" class="genre">
+              <div *ngFor="let genre of details[i].genres; let j = index">
+                <p>{{genre.name}}</p>
+                <div *ngIf="details[i].genres[j+1]">
+                  <div class="elipse"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="../../../assets/Vector right.svg"
+      (click)="nextBtn(identified)"
+      class="vector-right"
+      alt=""
+    >
+  </div>
+</div>

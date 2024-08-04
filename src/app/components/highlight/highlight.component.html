@@ -11,7 +11,7 @@
 
     <div class="execution">
       <button>
-        <img src="/assets/chevron-right.svg" alt="Play image">
+        <img src="/assets/chevron-right-fill.svg" alt="Play image">
         <b>Play</b>
       </button>
       <button>
@@ -20,4 +20,49 @@
       </button>
     </div>
   </div>
+
+  <section class="container">
+
+   <div class="list">
+      <app-card
+      [movies]="topRatedMovies"
+      [details]="topRatedMoviesDetails"
+      [identified]="'1'"
+      [title]="'Top Rated'"
+      class="list">
+    </app-card>
+   </div>
+
+   <div class="list">
+      <app-card
+        [movies]="popularMovies"
+        [details]="popularMoviesDetails"
+        [identified]="'2'"
+        [title]="'Popular'"
+      >
+    </app-card>
+   </div>
+
+    <div class="list">
+      <app-card
+        [movies]="animationMovies"
+        [details]="animationMoviesDetails"
+        [identified]="'3'"
+        [title]="'Animation'">
+      </app-card>
+    </div>
+
+    <div class="list">
+      <app-card
+        [movies]="scienceFictionMovies"
+        [details]="scienceFictionMoviesDetails"
+        [identified]="'4'"
+        [title]="'Science Fiction'">
+      </app-card>
+    </div>
+  </section>
 </main>
+
+<footer class="container">
+  Design feito por X e condificando por Wendel
+</footer>

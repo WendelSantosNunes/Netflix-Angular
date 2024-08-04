@@ -35,9 +35,8 @@ header{
   font-size: 0.875rem;
 }
 
-
 .headerContainer nav ul li:not(.active):hover{
-  color: red;
+  color: hsl(0, 0%, 75%);
 }
 
 
