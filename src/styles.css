@@ -27,7 +27,7 @@ button {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 805px) {
   .container {
       width: 720px;
   }

@@ -8,6 +8,7 @@ import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.compon
 import { HighlightComponent } from './components/highlight/highlight.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardComponent } from './components/card/card.component';
     HeaderComponent,
     MobileMenuComponent,
     HighlightComponent,
-    CardComponent
+    CardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

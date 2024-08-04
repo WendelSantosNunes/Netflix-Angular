@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'Url de imagem que é disponível pela API',
+  apiUrl: 'https://image.tmdb.org/t/p/w500',
   apiKey: 'Chave de acessor da API'
 };
 
