@@ -55,18 +55,15 @@ Certifique-se de que todas as configurações do ambiente foram realizadas corre
 
 - Navegue até a pasta onde o projeto foi baixado e clique em “Selecionar”.
 
-- No projeto aberto, acesse o arquivo environment.ts
+- No projeto aberto, acesse o arquivo environment.ts.
 
-- Adicione a chave de acesso da API
-  - Chave de acesso só consegue depois que você fazer cadastro na site: https://www.themoviedb.org/?language=pt-BR
+- Adicione a chave de acesso da API:
+  - A chave de acesso só pode ser obtida após o cadastro no site: The Movie Database (TMDB): https://www.themoviedb.org/?language=pt-BR
 
-- No projeto aberto, acesse o terminal integrado do VSCode.
-
-- Execute o seguintes comandos no terminal do VSCode: 
-  - `npm install` 
-    - Esse comando vai instalar os pacotes do projeto.
-  - `ng serve`
-    - Esse comando vai executar o projeto.
+- Execute os seguintes comandos no terminal do VSCode:
+  - `npm install`: Esse comando vai instalar os pacotes do projeto.
+  - `ng serve`: Esse comando vai executar o projeto.
+  
 - O projeto estará disponível em: `http://localhost:4200/`
 
 ### 🛠 Tecnologias
