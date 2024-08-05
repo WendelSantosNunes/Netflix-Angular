@@ -16,6 +16,7 @@ header{
   gap: 1rem;
 
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 .headerContainer div .active{
@@ -39,4 +40,16 @@ header{
   color: hsl(0, 0%, 75%);
 }
 
+.container.headerContainer #menuMobile {
+  display: none;
+}
 
+@media (max-width: 577px) {
+  .menu {
+    display: none;
+  }
+
+  .container.headerContainer #menuMobile {
+    display: block;
+  }
+}

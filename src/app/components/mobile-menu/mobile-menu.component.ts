@@ -16,7 +16,5 @@ export class MobileMenuComponent implements OnInit {
 
   setMenuIsVisible(){
     this.visible = !this.visible
-    console.log(this.visible)
-    console.log("oi")
   }
 }
