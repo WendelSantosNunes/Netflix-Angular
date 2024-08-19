@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://image.tmdb.org/t/p/w500',
-  apiKey: 'Chave de acessor da API'
+  apiUrl: `${process.env['API_URL']}`,
+  apiKey: `${process.env['API_KEY']}`
 };
 
 // Mundar a importação que tem environment para environment
