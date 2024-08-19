@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient }from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MovieDetailsResponse, MovieResponse } from './highlight';
-import { environmentTeste } from 'src/environments/environment.example';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HighlightService {
 
-  private apiKey = environmentTeste.apiKey;
+  private apiKey = environment.apiKey;
 
   constructor(private http: HttpClient) { }
 

@@ -28,7 +28,7 @@ export interface MovieResponse {
 export interface MovieDetailsResponse{
   adult: boolean;
   backdrop_path: string | null;
-  belongs_to_collection: any | null; // Ajuste se você tiver uma estrutura mais específica para coleções
+  belongs_to_collection: any | null;
   budget: number;
   genres: { id: number; name: string }[];
   homepage: string;
