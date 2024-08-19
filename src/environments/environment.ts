@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: `${process.env['API_URL']}`,
-  apiKey: `${process.env['API_KEY']}`
+  apiUrl: '',
+  apiKey: ''
 };
 
 // Mundar a importação que tem environment para environment
