@@ -1,4 +1,4 @@
-import { environmentTeste } from './../../../environments/environment.example';
+import { environment } from 'src/environments/environment';
 import { Movie, MovieDetailsResponse } from './highlight';
 import { HighlightService } from './highlight.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HighlightComponent implements OnInit {
 
-  url: string = environmentTeste.apiUrl;
+  url: string = environment.apiUrl;
   popularMovies: Movie[] = [];
   popularMoviesDetails: MovieDetailsResponse[] = [];
   animationMovies: Movie[] = [];
